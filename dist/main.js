@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector("#js_hamburger"),t=document.querySelector("#js_nav");e&&t&&e.addEventListener("click",(function(){e.classList.toggle("active"),t.classList.toggle("active")}))}))})();
+//# sourceMappingURL=main.js.map

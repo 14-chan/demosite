@@ -1,162 +1,164 @@
+@import '../foundations/var.scss';
+
 .header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    margin: 0 auto;
-    z-index: 1000;
-  }
-  
-  .header_inner {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+  @include pcl {
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .header_title {
-    color: black;
-    font-weight: bold;
-    margin-left: 40px;
-  }
-  
-  .header_nav {
-    margin-left: auto;
-    transition: visibility 0.5s, opacity 0.5s ease-in-out;
-  }
-  
-  .header_nav_list {
-    display: flex;
-  }
-  
-  .header_nav_item {
-    &:not(:first-child) {
-      margin-left: 60px;
-    }
-  
-    &:last-child {
-      margin-right: 40px;
-    }
-  }
-  
-  .header_nav_link {
-    display: block;
-    height: 80px;
-    line-height: 80px;
-    margin: 0 auto;
-  }
-  
-  @media screen and (max-width: 709px) {
-    .header_inner {
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: inherit;
-      position: relative;
-    }
-  
-    .header_title {
-      font-size: 20px;
-      margin-left: 20px;
-    }
-  
-    .header_nav {
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100vh;
-      transform: translateX(100%);
-      background-color: #fff;
-      visibility: hidden;
-      opacity: 0;
-      transition: transform 0.4s ease, visibility 0s 0.4s, opacity 0s 0.4s;
-    }
-  
-    .header_nav_list {
-      flex-direction: column;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      align-items: center;
-      transform: translate(-50%, -50%);
-      padding: 0;
-    }
-  
-    .header_nav_item {
-      margin-bottom: 24px;
-  
-      &:not(:first-child) {
-        margin-left: 0;
-      }
-  
-      &:last-child {
-        margin-left: 60px;
-        margin-bottom: 0;
-      }
-    }
-  
-    .header_nav_link {
-      color: #000;
-      width: 100%;
-      display: block;
-      text-align: center;
-      font-size: 20px;
-    }
-  
-    .header_nav.active {
-      transform: translateX(0);
-      visibility: visible;
-      opacity: 1;
-      transition: transform 0.4s ease;
-    }
-  }
-  .header_img {
-    padding-top: 80px;
-    width: 100%;
-    display: block;
-    margin: 0;
-  
-    /* ↑　widthが二つある
-            1280pxの方を削除
-            画面が小さくなった時にはみだすので 
-            containerの幅いっぱい100%にする*/
-  }
-  
-  /* ↓追記 */
-  
-  .header_img__item {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1280/629;
+    height: inherit;
     position: relative;
-  
-    img {
-      object-fit: cover;
-      object-position: center center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+  }
+}
+
+.header_title {
+  color: black;
+  font-weight: bold;
+  margin-left: 40px;
+
+  @include pcl {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+.header_nav {
+  margin-left: auto;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+
+  @include pcl {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease, visibility 0s 0.4s, opacity 0s 0.4s;
+  }
+}
+
+.header_nav_list {
+  display: flex;
+
+  @include pcl {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+}
+
+.header_nav_item {
+  &:not(:first-child) {
+    margin-left: 60px;
+  }
+
+  &:last-child {
+    margin-right: 40px;
+  }
+
+  @include pcl {
+    margin-bottom: 24px;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-left: 60px;
+      margin-bottom: 0;
     }
   }
+}
+
+.header_nav_link {
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+
+  @include pcl {
+    color: #000;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.header_nav.active {
+  @include pcl {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.4s ease;
+  }
+}
+
+.header_img {
+  padding-top: 80px;
+  width: 100%;
+  display: block;
+  margin: 0;
+
+  /* ↑　widthが二つある
+          1280pxの方を削除
+          画面が小さくなった時にはみだすので 
+          containerの幅いっぱい100%にする*/
   
-  @media screen and (max-width: 480px) {
-    .header_img {
-      height: 629px;
-      padding-top: 0;
-    }
-  
-    .header_img__item img {
+  @include pc {
+    height: 629px;
+    padding-top: 0;
+  }
+}
+
+/* ↓追記 */
+
+.header_img__item {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1280/629;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include pc {
       text-align: center;
       height: 629px;
       object-fit: cover;
     }
   }
+}
+
     

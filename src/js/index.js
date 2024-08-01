@@ -9,3 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+import '../scss/style.scss'; // SCSS ファイルへの正しいパス
