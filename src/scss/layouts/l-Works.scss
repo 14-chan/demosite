@@ -1,0 +1,68 @@
+.works {}
+
+.works_title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.works_nav {
+  /* ↓ gridで並べる */
+  display: grid;
+  width: 100%;
+
+  /* ↓ ３列を1:1:1:1 */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+
+  &:not(:first-child) {
+    padding-top: 37px;
+  }
+}
+
+/* ↑いらない */
+
+.works_nav_item {
+  max-width: 250px;
+}
+
+/* ↑いらない */
+/* ↓追記 */
+
+.works_nav_item_img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 250/176;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ↓追記 */
+
+.works_nav_item_name {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    padding-top: 10px;
+  }
+
+  .works_title {
+    padding-bottom: 0;
+  }
+
+  .works_nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
