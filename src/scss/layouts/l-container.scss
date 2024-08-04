@@ -1,4 +1,4 @@
-.container {
+.l-container {
     display: block;
     max-width: 1078px;
   
@@ -11,7 +11,7 @@
   }
   
   @media screen and (max-width: 480px) {
-    .container {
+    .l-container {
       display: block;
       max-width: 393px;
       margin: 0 auto;
