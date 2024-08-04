@@ -8,13 +8,12 @@
     /* ↑　中央寄せ */
     padding-left: 40px;
     padding-right: 40px;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .l-container {
+
+    @include sp {
       display: block;
       max-width: 393px;
       margin: 0 auto;
     }
   }
+
   

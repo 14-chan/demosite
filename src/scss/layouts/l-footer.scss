@@ -1,3 +1,5 @@
+@import '../foundations/var.scss';
+
 .footer {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -33,6 +35,10 @@
   .footer_nav {
     font-size: 22px;
     margin: 0 0 0 auto;
+
+    @include sp {
+      display: none;
+    }
   }
   
   .footer_nav_list {
@@ -71,14 +77,8 @@
   .copyright {
     margin: 0 auto;
     text-align: right;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .footer_nav {
-      display: none;
-    }
-  
-    .copyright {
+
+    @include sp {
       padding-top: 50px;
     }
   }

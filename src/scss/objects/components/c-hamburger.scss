@@ -1,3 +1,5 @@
+@import '../../foundations/var.scss';
+
 .header_hamburger {
     width: 48px;
     height: 100%;
@@ -7,6 +9,10 @@
     background-color: transparent;
     border-color: transparent;
     z-index: 9999;
+
+    @include spm {
+      display: none;
+    }
   
     span {
       width: 100%;
@@ -43,12 +49,6 @@
         top: -13px;
         transform: rotate(-45deg);
       }
-    }
-  }
-  
-  @media screen and (min-width: 710px) {
-    .hamburger {
-      display: none;
     }
   }
   

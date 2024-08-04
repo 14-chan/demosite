@@ -1,10 +1,21 @@
-.works {}
+@import '../foundations/var.scss';
+
+.works {
+
+  @include sp {
+    padding-top: 10px;
+  }
+}
 
 .works_title {
   text-align: center;
   font-weight: bold;
   padding-top: 30px;
   padding-bottom: 40px;
+
+  @include sp {
+    padding-bottom: 0;
+  }
 }
 
 .works_nav {
@@ -18,6 +29,10 @@
 
   &:not(:first-child) {
     padding-top: 37px;
+  }
+
+  @include sp {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -53,16 +68,3 @@
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  .works {
-    padding-top: 10px;
-  }
-
-  .works_title {
-    padding-bottom: 0;
-  }
-
-  .works_nav {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

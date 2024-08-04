@@ -1,7 +1,14 @@
+@import '../foundations/var.scss';
+
 .news {
     padding-bottom: 170px;
     max-width: 709px;
     margin: 0 auto;
+
+    @include sp {
+      padding-top: 30px;
+      padding-bottom: 100px;
+    }
   }
   
   .news_title {
@@ -9,12 +16,20 @@
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 16px;
+
+    @include sp {
+      padding-bottom: 0;
+    }
   }
   
   .news_list {
     flex: 1 1 auto;
     padding-top: 20px;
     text-align: center;
+
+    @include sp {
+      padding-top: 0;
+    }
   }
   
   .news_list_item {
@@ -26,6 +41,11 @@
     border-bottom: 2px solid #E1E1E1;
     padding-top: 37px;
     padding-bottom: 37px;
+
+    @include sp {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
   
   .news_info {
@@ -39,33 +59,15 @@
   
   .news_info_category, .news_content_text {
     padding-left: 40px;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .news {
-      padding-top: 30px;
-      padding-bottom: 100px;
-    }
-  
-    .news_title {
-      padding-bottom: 0;
-    }
-  
-    .news_list {
-      padding-top: 0;
-    }
-  
-    .news_item_link {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-  
-    .news_info_category {
+
+    @include sp {
       padding-left: 10px;
     }
-  
-    .news_content_text {
+  }
+  .news_content_text {
+    padding-left: 40px;
+
+    @include sp {
       padding: 0;
     }
   }
-  

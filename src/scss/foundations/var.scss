@@ -3,6 +3,7 @@
 /*レスポンシブ用*/
 $pcl: 1200px;
 $spl: 709px;
+$spm: 710px;
 $sp: 480px;
 
 @mixin pcl {
@@ -12,6 +13,11 @@ $sp: 480px;
 }
 @mixin spl {
     @media screen and (max-width: ($spl)) {
+        @content;
+    }
+}
+@mixin spm {
+    @media screen and (min-width: ($spm)) {
         @content;
     }
 }
