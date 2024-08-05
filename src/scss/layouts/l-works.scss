@@ -1,13 +1,13 @@
 @import '../foundations/var.scss';
 
-.works {
+.l-works {
 
   @include sp {
     padding-top: 10px;
   }
 }
 
-.works_title {
+.l-works__title {
   text-align: center;
   font-weight: bold;
   padding-top: 30px;
@@ -18,7 +18,7 @@
   }
 }
 
-.works_nav {
+.l-works__nav {
   /* ↓ gridで並べる */
   display: grid;
   width: 100%;
@@ -38,14 +38,14 @@
 
 /* ↑いらない */
 
-.works_nav_item {
+.l-works__nav__item {
   max-width: 250px;
 }
 
 /* ↑いらない */
 /* ↓追記 */
 
-.works_nav_item_img {
+.l-works__nav__item__img {
   display: block;
   width: 100%;
   aspect-ratio: 250/176;
@@ -64,7 +64,7 @@
 
 /* ↓追記 */
 
-.works_nav_item_name {
+.l-works__nav__item__name {
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
 @import '../foundations/var.scss';
 
-.news {
+.l-news {
     padding-bottom: 170px;
     max-width: 709px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
     }
   }
   
-  .news_title {
+  .l-news__title {
     text-align: center;
     font-weight: bold;
     padding-top: 30px;
@@ -22,7 +22,7 @@
     }
   }
   
-  .news_list {
+  .l-news__list {
     flex: 1 1 auto;
     padding-top: 20px;
     text-align: center;
@@ -32,11 +32,11 @@
     }
   }
   
-  .news_list_item {
+  .l-news__list__item {
     text-align: center;
   }
   
-  .news_item_link {
+  .l-news__item__link {
     display: block;
     border-bottom: 2px solid #E1E1E1;
     padding-top: 37px;
@@ -48,23 +48,23 @@
     }
   }
   
-  .news_info {
+  .l-news__info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 1rem;
   }
   
-  .news_info_data {}
+  .l-news__info__data {}
   
-  .news_info_category, .news_content_text {
+  .l-news__info__category {
     padding-left: 40px;
 
     @include sp {
       padding-left: 10px;
     }
   }
-  .news_content_text {
+  .l-news__content__text {
     padding-left: 40px;
 
     @include sp {

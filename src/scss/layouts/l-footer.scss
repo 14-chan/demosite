@@ -1,6 +1,6 @@
 @import '../foundations/var.scss';
 
-.footer {
+.l-footer {
     padding-top: 30px;
     padding-bottom: 60px;
     position: relative;
@@ -22,32 +22,32 @@
   /* ↓ 左右の余白を他のセクションと合わせたいので
   　　　背景だけを疑似要素で左右に広げる*/
   
-  .footer_title {
+  .l-footer__title {
     display: block;
     font-size: 22px;
   }
   
-  .footer_inner {
+  .l-footer__inner {
     display: flex;
     align-items: center;
   }
   
-  .footer_nav {
+  .l-footer__nav {
     font-size: 22px;
     margin: 0 0 0 auto;
 
-    @include sp {
+    @include spl {
       display: none;
     }
   }
   
-  .footer_nav_list {
+  .l-footer__nav__list {
     display: flex;
     position: relative;
     font-size: 14px;
   }
   
-  .footer_nav_item {
+  .l-footer__nav__item {
     &:not(first-child) {
       margin-left: 60px;
     }
@@ -57,24 +57,24 @@
     }
   }
   
-  .footer_nav_link {
+  .l-footer__nav__link {
     display: block;
     height: 80px;
     line-height: 80px;
     margin: 0 auto;
   }
   
-  .footer_info {
+  .l-footer__info {
     padding-top: 0;
     margin-top: 50px;
     display: block;
   }
   
-  .footer_info_name {
+  .l-footer__info__name {
     margin-bottom: 10px;
   }
   
-  .copyright {
+  .l-copyright {
     margin: 0 auto;
     text-align: right;
 

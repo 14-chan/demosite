@@ -2,12 +2,18 @@
 
 /*レスポンシブ用*/
 $pcl: 1200px;
-$spl: 709px;
+$pcm: 768px;
+$spl: 710px;
 $spm: 710px;
 $sp: 480px;
 
 @mixin pcl {
     @media screen and (max-width: ($pcl)) {
+        @content;
+    }
+}
+@mixin pcm {
+    @media screen and (max-width: ($pcm)) {
         @content;
     }
 }

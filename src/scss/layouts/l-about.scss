@@ -1,82 +1,98 @@
 @import '../foundations/var.scss';
 
-.about {
-    padding-top: 50px;
+.l-about {
+  padding-top: 50px;
 
-    @include sp {
-      padding-top: 80px;
-    }
+  @include sp {
+    padding-top: 80px;
   }
-  
-  .about_title {
-    text-align: center;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
 
-    @include sp {
-      padding-bottom: 20px;
-    }
+.l-about__title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include sp {
+    padding-bottom: 20px;
   }
+}
 
-  .about_inner {
-     
-    @include sp {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+.l-about__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+   
+  @include sp {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  
-  .about_content {
-    padding-top: 60px;
+}
 
-    @include sp {
-      padding-top: 20px;
-    }
+.l-about__content {
+  padding-top: 60px;
+  padding-right: 10px;
+
+  @include sp {
+    padding-top: 20px;
   }
-  
-  .about_content_title {
-    font-size: 200%;
-    text-align: left;
-    letter-spacing: 3px;
-    padding-bottom: 40px;
+}
 
-    @include sp {
-      padding-bottom: 10px;
-    }
+.l-about__content__title {
+  font-size: 200%;
+  text-align: left;
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+
+  @include sp {
+    padding-bottom: 10px;
   }
+}
 
-  .about_content_main {
+.l-about__content__main {
 
-    @include sp {
-      display: inline;
-    }
+  @include sp {
+    display: inline;
   }
+}
 
-  .about_space {
+.l-about__space {
 
-    @include sp {
-      width: 100%;
-    }
-  }
-  
-  .about_img {
-    position: absolute;
-    right: calc(((100vw - 100%) / 2) * -1);
-
-    @include sp {
-      text-align: center;
-    }
-  }
-  
-  .about_img_item {
-    display: block;
+  @include sp {
     width: 100%;
-
-    @include sp {
-      max-width: 346px;
-      max-height: 236px;
-    }
   }
+}
+
+.l-about__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  @include sp {
+    text-align: center;
+  }
+}
+
+.l-about__img__item {
+  width: 100%;
+
+  @include sp {
+    max-width: 346px;
+    max-height: 236px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .l-about__inner {
+    flex-direction: column-reverse;
+  }
+
+  .l-about__img {
+    margin-top: 20px;
+  }
+}
 
   

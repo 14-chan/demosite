@@ -1,6 +1,6 @@
-@import '../../foundations/var.scss';
+@import '../../../foundations/var.scss';
 
-.more_btn {
+.c-btn__more__btn {
     display: block;
   
     &[data-order="1"] {
@@ -28,7 +28,7 @@
     }
   }
   
-  .more_btn_link {
+  .c-btn__more__btn__link {
     display: inline-block;
     position: relative;
     padding-right: 30px;
