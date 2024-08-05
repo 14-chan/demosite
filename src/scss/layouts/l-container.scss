@@ -1,19 +1,21 @@
 .l-container {
     display: block;
-    max-width: 1078px;
+    max-width: 100.78rem;
   
     /* ↑　max以下の時の左右の余白 */
     margin: 0 auto;
   
     /* ↑　中央寄せ */
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
     @include sp {
       display: block;
-      max-width: 393px;
+      max-width: 34.6px;
       margin: 0 auto;
-    }
+      padding-left: 2.4rem;
+      padding-right: 2.3rem;
   }
+}
 
   
