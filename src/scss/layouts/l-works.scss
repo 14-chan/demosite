@@ -1,6 +1,7 @@
 @import '../foundations/var.scss';
 
 .l-works {
+  padding-top: 12.3rem;
 
   @include sp {
     padding-top: 10px;
@@ -9,9 +10,10 @@
 
 .l-works__title {
   text-align: center;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 3.3rem;
+  font: var(--font-outfit);
+  font-weight: 40rem;
+  font-size: 2.4rem;
 
   @include sp {
     padding-bottom: 0;
@@ -25,11 +27,7 @@
 
   /* ↓ ３列を1:1:1:1 */
   grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
-
-  &:not(:first-child) {
-    padding-top: 37px;
-  }
+  gap: 2.6rem;
 
   @include sp {
     grid-template-columns: repeat(2, 1fr);
@@ -39,7 +37,7 @@
 /* ↑いらない */
 
 .l-works__nav__item {
-  max-width: 250px;
+  max-width: 25rem;
 }
 
 /* ↑いらない */
@@ -66,5 +64,9 @@
 
 .l-works__nav__item__name {
   text-align: center;
+  padding-top: 1.6rem;
+  font: var(--font-outfit);
+  font-weight: 40rem;
+  font-size: 1.4rem;
 }
 

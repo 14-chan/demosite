@@ -1,7 +1,6 @@
 @import '../foundations/var.scss';
 
 .l-news {
-    padding-bottom: 170px;
     max-width: 709px;
     margin: 0 auto;
 
@@ -13,9 +12,10 @@
   
   .l-news__title {
     text-align: center;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding-top: 10.4rem;
+    font: var(--font-outfit);
+    font-weight: 40rem;
+    font-size: 2.4rem;
 
     @include sp {
       padding-bottom: 0;
@@ -24,7 +24,7 @@
   
   .l-news__list {
     flex: 1 1 auto;
-    padding-top: 20px;
+    padding-top: 0.34rem;
     text-align: center;
 
     @include sp {
@@ -39,8 +39,8 @@
   .l-news__item__link {
     display: block;
     border-bottom: 2px solid #E1E1E1;
-    padding-top: 37px;
-    padding-bottom: 37px;
+    padding-top: 4.76rem;
+    padding-bottom: 4.76rem;
 
     @include sp {
       padding-top: 25px;
@@ -55,17 +55,28 @@
     column-gap: 1rem;
   }
   
-  .l-news__info__data {}
+  .l-news__info__data {
+    font: var(--font-outfit);
+    font-weight: 40rem;
+    font-size: 1.4rem;
+  }
   
   .l-news__info__category {
-    padding-left: 40px;
+    padding-left: 3.9rem;
+    font: var(--font-outfit);
+    font-weight: 40rem;
+    font-size: 1.4rem;
+    color: 3c3c3c;
 
     @include sp {
       padding-left: 10px;
     }
   }
   .l-news__content__text {
-    padding-left: 40px;
+    padding-left: 5rem;
+    font: var(--font-outfit);
+    font-weight: 40rem;
+    font-size: 1.4rem;
 
     @include sp {
       padding: 0;

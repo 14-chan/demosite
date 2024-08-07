@@ -1,7 +1,7 @@
 @import '../foundations/var.scss';
 
 .l-about {
-  padding-top: 50px;
+  margin-top: 5.5rem;
 
   @include sp {
     padding-top: 80px;
@@ -10,9 +10,9 @@
 
 .l-about__title {
   text-align: center;
-  font-weight: bold;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font: var(--font-outfit);
+  font-weight: 40rem;
+  font-size: 2.4rem;
 
   @include sp {
     padding-bottom: 20px;
@@ -24,6 +24,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+  padding-top: 5.4rem;
    
   @include sp {
     display: flex;
@@ -32,8 +33,8 @@
 }
 
 .l-about__content {
-  padding-top: 60px;
-  padding-right: 10px;
+  padding-top: 5.1rem;
+  padding-right: 5rem;
 
   @include sp {
     padding-top: 20px;
@@ -41,10 +42,12 @@
 }
 
 .l-about__content__title {
-  font-size: 200%;
+  font-size: 3.6rem;
   text-align: left;
-  letter-spacing: 3px;
-  padding-bottom: 40px;
+  padding-bottom: 1.6rem;
+  font: var(--font-inter);
+  font-weight: 40rem;
+  font-size: 3.6rem;
 
   @include sp {
     padding-bottom: 10px;
@@ -55,6 +58,9 @@
 
   @include sp {
     display: inline;
+    font: var(--font-inter);
+    font-size: 1.6rem;
+    font-weight: 40rem;
   }
 }
 
@@ -67,7 +73,7 @@
 
 .l-about__img {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex: 1;
 
@@ -77,6 +83,8 @@
 }
 
 .l-about__img__item {
+  max-width: 55rem;
+  max-height: 37.5rem;
   width: 100%;
 
   @include sp {

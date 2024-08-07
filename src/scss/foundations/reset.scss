@@ -1,3 +1,5 @@
+@import "./var.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,11 @@
     text-decoration: none;
     color: black;
   }
+  address {
+    font: var(--font-inter);
+    font-weight: 40rem;
+    font-size: 1.4rem;
+  }
   
   body {
     /* ↓ reset.cssから */
@@ -36,5 +43,6 @@
     line-height: 1;
     font-size: 1.4rem;
     overflow-x: hidden;
+
   }
   
